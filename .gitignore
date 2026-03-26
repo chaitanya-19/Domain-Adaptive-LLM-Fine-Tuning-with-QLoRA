@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.env
+
+# Model artifacts (too large for git)
+results/qlora-medical-llama3.2-3b/adapter_model.safetensors
+results/qlora-medical-llama3.2-3b/checkpoint-*/
+*.bin
+*.safetensors
+
+# Keep evaluation results and plots
+!results/qlora-medical-llama3.2-3b/evaluation_results.json
+!results/qlora-medical-llama3.2-3b/*.png
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.key
+
+# Generated
+generate_notebook.py
